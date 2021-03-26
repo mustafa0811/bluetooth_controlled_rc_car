@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <Button
+        android:id="@+id/reverse_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_above="@+id/reverse_btn"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="-76dp"
+        android:layout_toEndOf="@+id/reverse_btn"
+        android:layout_toRightOf="@+id/reverse_btn"
+        app:iconGravity="textStart"
+        app:iconPadding="1dp"
+        app:icon="@drawable/south_east_24px" />
+
+    <Button
+        android:id="@+id/reverse_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/forward_btn"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_toStartOf="@+id/forward_btn"
+        android:layout_toLeftOf="@+id/forward_btn"
+        app:iconGravity="textStart"
+        app:iconPadding="1dp"
+        app:icon="@drawable/south_west_24px" />
+
+    <Button
+        android:id="@+id/forward_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/forward_right_btn"
+        android:layout_toLeftOf="@+id/forward_right_btn"
+        app:iconGravity="textStart"
+        app:iconPadding="1dp"
+        app:icon="@drawable/north_24px" />
+
+    <Button
+        android:id="@+id/forward_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/forward_btn"
+        android:layout_toStartOf="@+id/forward_btn"
+        android:layout_toLeftOf="@+id/forward_btn"
+        app:iconGravity="textStart"
+        app:iconPadding="1dp"
+        app:icon="@drawable/north_west_24px" />
+
+    <Button
+        android:id="@+id/forward_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_above="@+id/reverse_btn"
+        android:layout_toEndOf="@+id/reverse_btn"
+        android:layout_toRightOf="@+id/reverse_btn"
+        app:iconGravity="textStart"
+        app:iconPadding="1dp"
+        app:icon="@drawable/north_east_24px" />
+
+    <Button
+        android:id="@+id/reverse_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/forward_left_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        app:icon="@drawable/south_24px"
+        app:iconGravity="textStart"
+        app:iconPadding="1dp" />
+
+    <Button
+        android:id="@+id/bluetooth_connect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        app:iconGravity="textStart"
+        app:iconPadding="1dp"
+        app:icon="@drawable/bluetooth_audio_24px" />
+
+    <Button
+        android:id="@+id/light_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        app:iconGravity="textStart"
+        app:iconPadding="1dp"
+        app:icon="@drawable/highlight_24px" />
+
+    <Button
+        android:id="@+id/park_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="50dp"
+        app:iconGravity="textStart"
+        app:iconPadding="1dp"
+        app:icon="@drawable/local_parking_24px" />
+</RelativeLayout>
